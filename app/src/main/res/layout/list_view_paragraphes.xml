@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cadre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/monblocnote3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/writeyourwork5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="16dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/shapeoflistviewparagraph"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#1D1A2B"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/cadre"
+            app:layout_constraintEnd_toEndOf="@+id/cadre"
+            app:layout_constraintTop_toTopOf="@+id/cadre"
+            tools:ignore="NotSibling" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/writeyourwork5" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

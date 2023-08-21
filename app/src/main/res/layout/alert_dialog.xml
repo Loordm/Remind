@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/mydialoginterface"
+        android:layout_width="360dp"
+        android:layout_height="355dp"
+        android:background="@drawable/shapes"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/texttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="@string/addwork"
+            android:textColor="#025CA5"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/plus"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext"
+            />
+
+        <LinearLayout
+            android:id="@+id/myaddback"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="50dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:backgroundTint="#025CA5"
+                android:text="@string/back" />
+            <Button
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:backgroundTint="#025CA5"
+                android:text="@string/add" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

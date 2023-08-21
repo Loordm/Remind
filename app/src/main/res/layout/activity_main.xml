@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/navToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="5dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/basmala3"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/basmala33"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/قائمةأعمالي"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/navToolbar"
+            app:layout_constraintStart_toStartOf="@+id/navToolbar"
+            app:layout_constraintTop_toBottomOf="@id/basmala3" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+
+            <Button
+                android:id="@+id/everyday"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/roundedbutton"
+                android:drawableLeft="@drawable/ic_baseline_check_circle_24"
+                android:text="@string/أعمالي_اليومية"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/orange" />
+
+            <Button
+                android:id="@+id/dointhefuture"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/roundedbutton"
+                android:drawableLeft="@drawable/ic_baseline_psychology_24"
+                android:text="@string/تطوير"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/orange" />
+
+            <Button
+                android:id="@+id/myideas"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/roundedbutton"
+                android:drawableLeft="@drawable/ic_baseline_lightbulb_24"
+                android:text="@string/أفكاري"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/orange" />
+
+            <Button
+                android:id="@+id/questions"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/roundedbutton"
+                android:drawableLeft="@drawable/question"
+                android:text="@string/الاستفسار"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/orange" />
+
+            <Button
+                android:id="@+id/paragraphe"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/roundedbutton"
+                android:drawableLeft="@drawable/paragraphe"
+                android:text="@string/فائدة"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/orange" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
